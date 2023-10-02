@@ -5,6 +5,8 @@
 }
 
 :root {
+    scroll-behavior: smooth;
+
     --backgroundColor: #03002e;
     --white: white;
     --logoTextColor: #FBB936;
@@ -50,13 +52,15 @@ li {
 }
 
 header {
-    max-height: 0;
-    transition: max-height 0.15s ease-out;
+    transition: background-color 0.5s ease;
     overflow: hidden;
     position: fixed;
     inset: 0 0 auto;
-    background-color: rgba(37, 37, 69, 0.9);
     z-index: 100;
+}
+
+header.active {
+    background-color: rgba(37, 37, 69, 0.9);
 }
 
 .header-container {
@@ -179,6 +183,10 @@ header {
 
 .section-FAQ {
     height: 100vh;
+}
+
+.inFaq {
+    padding-top: 100px;
 }
 
 .faq-title {

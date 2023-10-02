@@ -14,6 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
         .pause(300)
         .break()
         .type('<span>Rano-AI</span>.uz ga xush kelibsiz!')
+        .pause(700)
         .exec(() => {
             btnFrame.classList.add('active');
         })
