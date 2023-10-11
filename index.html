@@ -10,7 +10,7 @@
 </head>
 
 <body>
-  <section class="particles" id="particles-js"></section>
+  <div class="particles" id="particles-js"></div>
   <header>
     <div class="container header-container">
       <div class="header-left">
@@ -23,16 +23,13 @@
       <div class="header-right">
         <ul class="navigate">
           <li class="nav-item active">
-            <a href="#home">Assosiy</a>
+            <a href="#home">Asosiy</a>
           </li>
           <li class="nav-item">
             <a href="#FAQ">Yo'riqnoma</a>
           </li>
           <li class="nav-item">
             <a href="#">Haqida</a>
-          </li>
-          <li class="nav-item">
-            <a href="#">Xizmatlar</a>
           </li>
           <li class="nav-item">
             <a href="#">Jamoa</a>
@@ -57,7 +54,7 @@
     </section>
     <section class="section-FAQ" id="FAQ">
       <div class="inFaq container">
-        <h2 class="faq-title title">FAQ</h2>
+        <h2 class="faq-title title">Yo'riqnoma</h2>
         <div class="chat-preview_frame">
           <div class="my-message message">
             <div class="message-text">
@@ -132,9 +129,12 @@
       </div>
     </section>
   </main>
-  <script src="./src/particles/particles.js"></script>
-  <script src="./src/particles/app.js"></script>
-  <script src="./src/printText/text.js" type="module"></script>
+
+  <!-- !Particle -->
+  <script src="./src/utils/particles/particles.js"></script>
+  <script src="./src/utils/particles/app.js"></script>
+
+  <script src="./src/utils/printText/text.js" type="module"></script>
   <script type="module" src="/src/main.ts"></script>
 </body>
 
