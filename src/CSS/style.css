@@ -61,7 +61,6 @@ header {
 
 header.active {
     background-color: rgba(37, 37, 69, 0.9);
-
 }
 
 .header-container {
@@ -112,12 +111,6 @@ header.active {
 
 .section-main {
     height: 100vh;
-}
-
-.inSection-main {
-    width: 100vw;
-    display: table-cell;
-    vertical-align: middle;
 }
 
 .start__div {
@@ -227,7 +220,6 @@ header.active {
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    /* border: 2px solid white; */
 }
 
 .message-section.you>.avatar-section>img {
@@ -255,14 +247,68 @@ header.active {
     margin-left: 20px;
 }
 
-.about-cards {
+.cards-section {
     display: flex;
-    flex-direction: column;
-    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
 }
 
-.about-card {
-    background-color: rgba(255, 255, 255, 0.203);
-    border-radius: 3px;
-    color: #FBB936;
+.cards-section .booking-card {
+    position: relative;
+    width: calc(1140px / 2);
+    display: flex;
+    flex: 0 0 300px;
+    flex-direction: column;
+    margin: 20px;
+    margin-bottom: 30px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-position: center center;
+    background-size: cover;
+    text-align: center;
+    color: #0a4870;
+    transition: 0.3s;
+    z-index: 2;
+}
+
+.cards-section .booking-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(10, 72, 112, 0);
+    transition: 0.3s;
+}
+
+.cards-section .booking-card .book-container {
+    height: 200px;
+}
+
+.cards-section .booking-card .informations-container {
+    flex: 1 0 auto;
+    padding: 20px 20px 30px 20px;
+    background: #f0f0f0;
+    transform: translateY(206px);
+    transition: 0.3s;
+}
+
+.cards-section .booking-card:hover::before {
+    background: rgba(10, 72, 112, 0.6);
+}
+
+.cards-section .booking-card:hover .informations-container {
+    transform: translateY(0px);
+}
+
+@media (max-width: 768px) {
+    .cards-section .booking-card .informations-container {
+        transform: translateY(0px);
+    }
 }
