@@ -29,13 +29,13 @@
             <a href="#FAQ">Yo'riqnoma</a>
           </li>
           <li class="nav-item">
-            <a href="#">Haqida</a>
+            <a href="#about">Haqida</a>
           </li>
           <li class="nav-item">
-            <a href="#">Jamoa</a>
+            <a href="#team">Jamoa</a>
           </li>
           <li class="nav-item">
-            <a href="#">Aloqa</a>
+            <a href="#form">Aloqa</a>
           </li>
         </ul>
       </div>
@@ -58,7 +58,7 @@
         <div class="chat-preview_frame">
           <div class="messages">
             <div class="message-section you">
-              <p class="message" style="border-bottom-left-radius: 25px;">
+              <p class="message">
                 O'zbek tilida yoza olasanmi iltimos?
               </p>
               <div class="avatar-section">
@@ -69,13 +69,13 @@
               <div class="avatar-section">
                 <img src="./src/assets/avatar.jpg" alt="">
               </div>
-              <p class="message" style="border-bottom-right-radius: 25px;">
+              <p class="message">
                 Ha, albatta! Men o'zbek tilida yoza olaman. Sizga qanday yordam berishim mumkin? Menga savolingizni
                 yo'llang va men unga javob berishga harakat qilaman.
               </p>
             </div>
             <div class="message-section you">
-              <p class="message" style="border-bottom-left-radius: 25px;">
+              <p class="message">
                 Menda ingliz tili fanidan 30 ta test savollari bor. Senga ularni jo'natsam yechib bera olasanmi? Undan
                 tashqari menda qiynab kelayotgan hayot haqidagi savollar bor. Ularni esa keyinroq so'rayman.
               </p>
@@ -96,7 +96,7 @@
         </div>
       </div>
     </section>
-    <section class="about">
+    <section class="about" id="about">
       <div class="container">
         <h1 class="title">Loyiha haqida</h1>
         <ul class="cards-section">
@@ -142,8 +142,9 @@
         </ul>
       </div>
     </section>
-    <section class="team">
+    <section class="team" id="team">
       <div class="container">
+        <h1 class="title">Jamoa</h1>
         <div class="team-frame">
           <div class="team_shakhriyor">
             <div class="inTeam-user">
@@ -262,9 +263,36 @@
         </div>
       </div>
     </section>
-
-
+    <section class="form-section" id="form">
+      <div class="container">
+        <h1 class="title">Aloqa</h1>
+        <form class="form-inps">
+          <div class="section-form">
+            <div class="user-info">
+                <input type="text" placeholder="Ism">
+                <input type="email" placeholder="Email">
+                <input type="tel" placeholder="Tel">
+            </div>
+            <div class="message-text">
+              <textarea name="" id="" placeholder="Xabaringizni kiriting"></textarea>
+            </div>
+          </div>
+          <button class="form-send">Yuborish</button>
+        </form>
+      </div>
+    </section>
   </main>
+  <!-- <footer>
+    <div class="container">
+      <div class="contactUs">
+        <p>Kontaktlar</p>
+        <a href="#">Telegram kanal</a>
+        <a href="#">Loyihalar</a>
+        <a href="#">Tarmoq</a>
+        <a href="#">Xizmatlar</a>
+      </div>
+    </div>
+  </footer> -->
 
   <!-- !Particle -->
   <script src="./src/utils/particles/particles.js"></script>

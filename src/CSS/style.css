@@ -47,8 +47,9 @@ li {
 }
 
 .title {
-    font-size: 27px;
+    font-size: 30px;
     font-weight: 900;
+    margin-bottom: 30px;
 }
 
 header {
@@ -56,7 +57,7 @@ header {
     overflow: hidden;
     position: fixed;
     inset: 0 0 auto;
-    z-index: 100;
+    z-index: 100; 
 }
 
 header.active {
@@ -187,6 +188,12 @@ header.active {
     margin-bottom: 30px;
 }
 
+.messages {
+    border: 2px solid var(--white);
+    padding: 20px;
+    border-radius: 5px;
+}
+
 .message-section {
     margin-bottom: 25px;
     display: flex;
@@ -195,11 +202,6 @@ header.active {
 
 .message-section.you>.message {
     margin-left: auto;
-    border-radius: 25px 10px 1px 2px;
-}
-
-.message-section.bot>.message {
-    border-radius: 15px 25px 2px 0;
 }
 
 .message {
@@ -211,6 +213,8 @@ header.active {
     padding: 10px 20px;
     background-color: var(--logoTextColor);
     opacity: 0.89;
+    font-size: 17px;
+    border-radius: 5px;
 }
 
 .avatar-section {
@@ -264,9 +268,9 @@ header.active {
     flex-direction: column;
     margin: 20px;
     margin-bottom: 30px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    border-radius: 10px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
     overflow: hidden;
     background-position: center center;
     background-size: cover;
@@ -300,7 +304,8 @@ header.active {
 }
 
 .cards-section .booking-card:hover::before {
-    background: rgba(10, 72, 112, 0.6);
+    background: var(--logoTextColor);
+    opacity: 0.6;
 }
 
 .cards-section .booking-card:hover .informations-container {
@@ -328,7 +333,7 @@ header.active {
     height: 150px;
     border-radius: 50%;
     overflow: hidden;
-    border: 2px solid var(--white);
+    border: 1.5px solid var(--white);
     background-size: cover;
     background-position: center;
 }
@@ -344,6 +349,7 @@ header.active {
 .team_abbos .img-frame {
     background-image: url('../assets/abbos.jpg');
 }
+
 .team_aziz .img-frame {
     background-image: url('../assets/aziz.jpg');
 }
@@ -386,4 +392,95 @@ header.active {
 .user-links_icon svg,
 .user-links_icon img {
     width: 25px;
+}
+
+.form-section {
+    margin-top: 50px;
+}
+
+.form-inps {
+    width: 100%;
+    border: 2px solid var(--white);
+    padding: 30px 30px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-form {
+    display: flex;
+    gap: 30px;
+}
+
+.form-section form .user-info,
+.form-section form .message-text {
+    width: calc(1076.800px / 2);
+}
+
+textarea {
+    resize: none;
+    border: none;
+    outline: none;
+    min-height: 100%;
+}
+
+.form-section .user-info {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.form-section input,
+textarea {
+    width: 100%;
+    padding: 15px 25px;
+    font-size: 18px;
+}
+
+.form-send {
+    padding: 13px 20px;
+    background-color: var(--logoTextColor);
+    cursor: pointer;
+    border-radius: 4px;
+    color: var(--white);
+    margin-top: 20px;
+    font-size: 18px;
+    z-index: 2;
+    transition: all .3s;
+}
+
+.form-send:hover {
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 8px 24px, rgba(255, 255, 255, 0.1) 0px 16px 56px, rgba(255, 255, 255, 0.1) 0px 24px 80px;
+}
+
+footer {
+    display: block;
+    background-color: #181818;
+    padding: 3rem;
+    z-index: 2;
+    position: relative;
+    font-size: 18px;
+    margin-top: 200px;
+}
+
+footer p {
+    color: rgb(67, 67, 67);
+}
+
+footer a {
+    padding: 4px;
+    width: fit-content;
+    color: white;
+}
+
+footer a:hover {
+    color: black;
+    background-color: var(--logoTextColor);
+}
+
+footer .contactUs {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
