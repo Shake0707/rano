@@ -312,3 +312,78 @@ header.active {
         transform: translateY(0px);
     }
 }
+
+.team {
+    margin-top: 50px;
+}
+
+.team-frame {
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+}
+
+.team-frame .img-frame {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid var(--white);
+    background-size: cover;
+    background-position: center;
+}
+
+.team_shakhriyor .img-frame {
+    background-image: url('../assets/shahriyor.jpg');
+}
+
+.team_mehroj .img-frame {
+    background-image: url('../assets/mehroj.jpg');
+}
+
+.team_abbos .img-frame {
+    background-image: url('../assets/abbos.jpg');
+}
+.team_aziz .img-frame {
+    background-image: url('../assets/aziz.jpg');
+}
+
+.inTeam-user {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inTeam-user h3 {
+    font-size: 24px;
+}
+
+.inTeam-user h3 i {
+    display: inline-block;
+    width: 20px;
+    margin-left: 2px;
+}
+
+.inTeam-user h3 i svg {
+    width: 100%;
+}
+
+.inTeam-user .name-icon {
+    width: 100%;
+}
+
+.inTeam-user .roll {
+    font-size: 16px;
+    color: rgb(157, 157, 157);
+}
+
+.user-links_icon {
+    margin-top: 7px;
+    display: flex;
+    gap: 10px;
+}
+
+.user-links_icon svg,
+.user-links_icon img {
+    width: 25px;
+}
