@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
         .delete(1)
         .type('s')
         .move(null, { to: 'END' })
-        .type(' alekum')
+        .type(' aleykum')
         .pause(300)
         .break()
         .type('<span>Rano-AI</span> ga xush kelibsiz!')

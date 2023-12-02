@@ -1,8 +1,4 @@
-let width = window.screen.availWidth;
-
-window.addEventListener('resize', e => {
-  width = e.target.screen.availWidth;
-});
+const width = window.screen.availWidth;
 
 particlesJS('particles-js',
 
@@ -77,6 +73,7 @@ particlesJS('particles-js',
     },
     "interactivity": {
       "detect_on": "canvas",
+      // !events
       "events": {
         "onhover": {
           "enable": true,
