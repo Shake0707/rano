@@ -38,3 +38,9 @@ burgerBtn.addEventListener('click', () => {
 removeMenuBtn.addEventListener('click', () => {
     inMobileNav.classList.remove('active');
 });
+
+const navItemLinks = document.querySelectorAll('.nav-item a');
+
+navItemLinks.forEach(item => item.addEventListener('click', () => {
+    inMobileNav.classList.remove('active');
+}))
